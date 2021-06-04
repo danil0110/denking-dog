@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/danil0110/denking-dog/issues"
   },
-  "homepage": "https://github.com/danil0110/denking-dog#readme"
+  "homepage": "https://github.com/danil0110/denking-dog#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  }
 }
