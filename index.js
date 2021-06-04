@@ -12,14 +12,16 @@ bot.on('message', msg => {
 	const firstName = msg.from.first_name;
 	const lastName = msg.from.last_name;
 
-	console.log(text.toLowerCase());
-
 	if (text === '/start') {
 		bot.sendMessage(chatId, `Привет, ${firstName} ${lastName}! Я буду твоим самым верным псом!`);
 	}
 
 	if (text === '/info') {
 		bot.sendMessage(chatId, `Хочешь узнать меня поближе? Я самый дружелюбный пес, который просто хочет человеческого внимания! Будешь моим хозяином?`);
+	}
+
+	if (text === '/call') {
+		bot.sendMessage(chatId, 'Призываю своего духа! @duuuuuuuden , явись!');
 	}
 
 	if (triggerMessages.includes(text.toLowerCase())) {
